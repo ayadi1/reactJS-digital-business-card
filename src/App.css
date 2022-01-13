@@ -21,7 +21,6 @@ body {
   overflow: hidden;
 }
 .img {
-  background: url(http://localhost:3000/static/media/1627227732848.bcca88615b7ff1cbd615.jpeg);
   height: 330px;
   background-size: cover;
   background-repeat: no-repeat;
