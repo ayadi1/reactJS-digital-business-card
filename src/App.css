@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #23252c;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  background: #1a1b21;
+  width: 400px;
+  margin: auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.img {
+  background: url(http://localhost:3000/static/media/1627227732848.bcca88615b7ff1cbd615.jpeg);
+  height: 330px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.info {
+  color: #ffffff;
+  margin-top: 30px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
 }
-
-.App-link {
-  color: #61dafb;
+.info h1 {
+  font-size: 25px;
+  text-align: center;
 }
+.info h2 {
+  font-size: 12.8px;
+  text-align: center;
+  color: #f3bf99;
+}
+.info p {
+  font-size: 10.24px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  text-align: center;
+
+  color: #f5f5f5;
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 30px;
+}
+.links a {
+  padding: 10px 20px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.links a:first-child {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  color: #374151;
+}
+.links a:last-child {
+  background: #5093e2;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  color: #ffffff;
+}
+.main {
+  padding: 0 30px;
+  margin-top: 30px;
+}
+.main h3 {
+  font-size: 16px;
+  line-height: 150%;
+  color: #f5f5f5;
+}
+.main p {
+  font-size: 10.24px;
+  line-height: 150%;
+  color: #dcdcdc;
+}
+.footer {
+  margin-top: 30px;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-around;
+  background: #161619;
+}
+.footer a {
+  color: #918e9b;
+  font-size: 33px;
 }
